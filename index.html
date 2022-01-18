@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Saiu as notas do ENEM? | Descubra a sua média agora!</title>
-
+    <title>Document</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--META TAGS FOR SEO-->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <link rel="stylesheet" href="assets/estilo/reset.css">
-    <link rel="stylesheet" href="assets/estilo/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
-
 <body>
+    <header>
+        <picture class="imagem-anuncio">
+            <img src="assets/img/calculo.png" alt="Calculadora">
+        </picture>
+
+        <section class="conteudo">
+            <h1>Saiu as notas do ENEM?</h1>
+            <p>Então, você está no lugar certo. Descubra o quão perto você está do seu curso dos sonhos com o cálculo da sua média geral ou média ponderada!</p>
+            <a href="#">Calculadora</a>
+        </section>
+    </header>
+
     <main>
-        <section class="apresentacao">
-            <img src="assets/img/anuncio.png" alt="Mulher ao alto-falante">
+        <!-- ADICIONAR BUTTON QUE ACIONA O CÁLCULO DA MÉDIA -->
+        <section class="input-notas">
+            <label for="linguagens">Linguagens, Códigos e suas Tecnologias</label>
+            <input type="number" id="linguagens" name="Linguagens, Códigos e suas Tecnologias">
+            <label for="humanas">Ciências Humanas</label>
+            <input type="number" id="humanas" nome="Ciências Humanas">
+            <label for="natureza">Ciências da Natureza</label>
+            <input type="number" id="natureza" nome="Ciências da Natureza">
+            <label for="matematica">Matemática e suas tecnologias</label>
+            <input type="number" id="matematica" nome="Matemática e suas tecnologias">
+            <label for="redacao">Redação</label>
+            <input type="number" id="redacao" nome="Redação">
+            
+        </section>
+        <!-- VERIFIQUE SE OCORRE ERRO POR HAVER CAMPOS DE INPUT COM O MESMO ID -->
+        <section class="input-pesos">
+            <input type="number" id="linguagens" name="Linguagens, Códigos e suas Tecnologias">
+            <input type="number" id="humanas" nome="Ciências Humanas">
+            <input type="number" id="natureza" nome="Ciências da Natureza">
+            <input type="number" id="matematica" nome="Matemática e suas tecnologias">
+            <input type="number" id="redacao" nome="Redação">
+        </section>
 
-            <div class="apresentacao_Content">
-                <h1>Saiu as notas do ENEM?</h1>
-                <p>Então, você está no lugar certo. Descubra o quão perto você está do seu curso dos sonhos com o cálculo da sua média geral ou <abbr title="Média que leva em consideração os pesos de cada matéria">média ponderada</abbr>!</p>
-
-                <a href="math.html">CALCULADORA</a>
-            </div> 
+        <section class="output-resultado">
+            <h3>Resultado</h3>
+            <h4>789,67</h4>
         </section>
     </main>
 
     <footer>
-        <h4>developed by <a href="#">Ana Dias</a></h4>
+        <h4>Developed by <a href="#">Ana Dias</a></h4>
     </footer>
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>

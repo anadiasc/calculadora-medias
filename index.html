@@ -21,7 +21,6 @@
     </header>
 
     <main>
-        <!-- ADICIONAR BUTTON QUE ACIONA O CÁLCULO DA MÉDIA -->
         <section class="input-notas">
             <label for="linguagens">Linguagens, Códigos e suas Tecnologias</label>
             <input type="number" id="linguagens" name="Linguagens, Códigos e suas Tecnologias">
@@ -34,19 +33,20 @@
             <label for="redacao">Redação</label>
             <input type="number" id="redacao" nome="Redação">
             
+            <button class="buttonCalcular">Calcular</button>
         </section>
-        <!-- VERIFIQUE SE OCORRE ERRO POR HAVER CAMPOS DE INPUT COM O MESMO ID -->
+
         <section class="input-pesos">
-            <input type="number" id="linguagens" name="Linguagens, Códigos e suas Tecnologias">
-            <input type="number" id="humanas" nome="Ciências Humanas">
-            <input type="number" id="natureza" nome="Ciências da Natureza">
-            <input type="number" id="matematica" nome="Matemática e suas tecnologias">
-            <input type="number" id="redacao" nome="Redação">
+            <input type="number" id="peso-linguagens" name="Linguagens, Códigos e suas Tecnologias">
+            <input type="number" id="peso-humanas" nome="Ciências Humanas">
+            <input type="number" id="peso-natureza" nome="Ciências da Natureza">
+            <input type="number" id="peso-matematica" nome="Matemática e suas tecnologias">
+            <input type="number" id="peso-redacao" nome="Redação">
         </section>
 
         <section class="output-resultado">
             <h3>Resultado</h3>
-            <h4>789,67</h4>
+            <h4 class="resultadoNota"></h4>
         </section>
     </main>
 

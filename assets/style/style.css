@@ -114,3 +114,27 @@ a {
         width: 266px;
     }
 }
+
+@media (max-width: 320px) {
+    .back{
+        max-width: 274px;
+        height: 467px;
+    }
+
+    .conteudo > h1 {
+        font-size: 1.3em;
+    }
+
+    .conteudo > p {
+        font-size: 1.1em;
+    }
+    
+    .input-notas > h2 {
+        font-size: 1.1em;
+    }
+
+    li{
+        width: 225px;
+        font-size: 1.1em;
+    }
+}

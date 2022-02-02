@@ -10,8 +10,13 @@ const nota_redacao = document.querySelector('#redacao');
 const buttonCalcular = document.querySelector('.buttonCalcular');
 
 // definindo função média aritmética
-
-buttonCalcular.addEventListener('click', mediaAritmetica);
+let i = 0;
+buttonCalcular.addEventListener('click', function click(e){
+    i++;
+    console.log(i);
+    mediaAritmetica();
+    buttonCalcular.removeEventListener('click', click);
+});
 
 function mediaAritmetica(){
     const linguagens = Number(nota_linguagens.value);
@@ -24,13 +29,23 @@ function mediaAritmetica(){
     const media = soma / 5;
 
     totalMedia = media.toFixed(2); //.toFixed é usado para mostrar resultados numéricos com um determinado nº de casas decimais 
-    atualizarInterface();
+    adicionarResultado();
 };
 
-// definindo função atualizar interface
+// definindo função adicionar resultado
 
-const resultadoNota = document.querySelector('.resultadoNota');
+const resultado = document.querySelector('.output-resultado');
 
-function atualizarInterface(){
-    resultadoNota.innerText = `${totalMedia}`;
+function adicionarResultado(){
+    const li = document.createElement('li');
+    const h3 = document.createElement('h3');
+    const p = document.createElement('p');
+
+    h3.innerText = `Média`;
+    p.innerText = `${totalMedia}`;
+
+    li.appendChild(h3);
+    li.appendChild(p);
+    
+    resultado.appendChild(li);
 };

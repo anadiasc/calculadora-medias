@@ -10,9 +10,9 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 
-.conteiner {
+.container {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ body {
 .back {
     background-color: white;
     max-width: 420px;
-    height: 439px;
+    height: 424px;
     border-radius: 0px;
     box-shadow: -7px 7px 0px 2px #0f0f0f;
     display: flex;
@@ -68,7 +68,11 @@ button {
     font-family: 'Dosis', sans-serif;
 }
 
-.output-resultado {
+button:hover {
+    background-color: #1d3881;
+}
+
+li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -80,4 +84,33 @@ button {
     width: 380px;
     height: 50px;
     margin-top: 9px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media (max-width: 375px) {
+    .back{
+        max-width: 312px;
+        height: 512px;
+    }
+
+    .conteudo > h1 {
+        font-size: 1.7em;
+    }
+
+    li{
+        width: 266px;
+    }
 }

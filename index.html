@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Document</title>
+    <title>ENEM | CALCULAR MÉDIA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saiu as notas do ENEM? Então, você está no lugar certo. Descubra o quão perto você está do seu curso dos sonhos com o cálculo da sua média geral">
+    <meta name="keywords" content="ENEM, média, INEP, Notas do ENEM, Página do participante, Calculadora, média aritmética, nota de corte">
+    <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <picture class="imagem-anuncio">
-            <img src="assets/img/calculo.png" alt="Calculadora">
-        </picture>
-
-        <section class="conteudo">
-            <h1>Saiu as notas do ENEM?</h1>
-            <p>Então, você está no lugar certo. Descubra o quão perto você está do seu curso dos sonhos com o cálculo da sua média geral ou média ponderada!</p>
-            <a href="#">Calculadora</a>
-        </section>
-    </header>
-
-    <main>
-        <section class="input-notas">
-            <label for="linguagens">Linguagens, Códigos e suas Tecnologias</label>
-            <input type="number" id="linguagens" name="Linguagens, Códigos e suas Tecnologias">
-            <label for="humanas">Ciências Humanas</label>
-            <input type="number" id="humanas" nome="Ciências Humanas">
-            <label for="natureza">Ciências da Natureza</label>
-            <input type="number" id="natureza" nome="Ciências da Natureza">
-            <label for="matematica">Matemática e suas tecnologias</label>
-            <input type="number" id="matematica" nome="Matemática e suas tecnologias">
-            <label for="redacao">Redação</label>
-            <input type="number" id="redacao" nome="Redação">
-            
-            <button class="buttonCalcular">Calcular</button>
-        </section>
-
-        <section class="input-pesos">
-            <input type="number" id="peso-linguagens" name="Linguagens, Códigos e suas Tecnologias">
-            <input type="number" id="peso-humanas" nome="Ciências Humanas">
-            <input type="number" id="peso-natureza" nome="Ciências da Natureza">
-            <input type="number" id="peso-matematica" nome="Matemática e suas tecnologias">
-            <input type="number" id="peso-redacao" nome="Redação">
-        </section>
-
-        <section class="output-resultado">
-            <h3>Resultado</h3>
-            <h4 class="resultadoNota"></h4>
-        </section>
-    </main>
-
+    <div class="conteiner">
+        <div class="back">
+            <header>
+                <section class="conteudo">
+                    <h1>SAIU AS NOTAS DO ENEM?</h1>
+                    <p>Então, você está no lugar certo. Descubra o quão perto você está do seu curso dos sonhos com o cálculo da sua média geral!</p>
+                </section>
+            </header>
+            <main>
+                <section class="input-notas">
+                    <h2>Insira suas notas:</h2>
+                    <input type="number" id="linguagens" placeholder="Linguagens, Códigos e suas Tecnologias">
+                    <input type="number" id="humanas" placeholder="Ciências Humanas">
+                    <input type="number" id="natureza" placeholder="Ciências da Natureza">
+                    <input type="number" id="matematica" placeholder="Matemática e suas tecnologias">
+                    <input type="number" id="redacao" placeholder="Redação">
+                </section>
+                <button class="buttonCalcular">Calcular</button>
+                <section class="output-resultado">
+                    <h3>Média</h3>
+                    <h4 class="resultadoNota"></h4>
+                </section>
+            </main>
+        </div>
+    </div>
     <footer>
-        <h4>Developed by <a href="#">Ana Dias</a></h4>
+        <h4>Developed by <a href="https://github.com/anadiasc" target="_blank" rel="external">Ana Dias</a></h4>
     </footer>
     <script src="assets/js/script.js"></script>
-</body>
+</body> 
 </html>

@@ -23,7 +23,7 @@ function mediaAritmetica(){
     const soma = linguagens + natureza + humanas + matematica + redacao;
     const media = soma / 5;
 
-    totalMedia = media;
+    totalMedia = media.toFixed(2); //.toFixed é usado para mostrar resultados numéricos com um determinado nº de casas decimais 
     atualizarInterface();
 };
 

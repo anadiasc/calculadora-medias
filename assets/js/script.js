@@ -41,7 +41,7 @@ function adicionarResultado(){
     const h3 = document.createElement('h3');
     const p = document.createElement('p');
 
-    h3.innerText = `Média`;
+    h3.innerText = `Média:`;
     p.innerText = `${totalMedia}`;
 
     li.appendChild(h3);

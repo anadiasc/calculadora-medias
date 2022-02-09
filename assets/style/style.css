@@ -101,10 +101,10 @@ li {
     color: #161616;
 }
 
-@media (max-width: 395px) {
+@media (max-width: 417px) {
     .back{
         max-width: 87vw;
-        height: 79vh;
+        height: 80vh;
     }
 
     .conteudo > h1 {
@@ -120,7 +120,7 @@ li {
 
 @media (max-width: 320px) {
     .back{
-        height: 77vh;
+        height: 80vh;
     }
 
     .conteudo > p {

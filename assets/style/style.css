@@ -101,7 +101,7 @@ li {
     color: #161616;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 395px) {
     .back{
         max-width: 87vw;
         height: 79vh;
